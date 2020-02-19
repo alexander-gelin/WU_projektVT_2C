@@ -2,36 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="gridwrapper">
-        <header id="indexheader">   
+    <div class="gridwrapper">
+        <header class="indexheader">
             Logo
         </header>
-        <nav id="burgernav">
-            
-            <ul id="burgerul">
-                <li><a href="">Link1</a></li>
-                <li><a href="">Link2</a></li>
-                <li><a href="">Link3</a></li>
-                <li><a href="">Link4</a></li>
+        <nav class="burgernav">
+            <ul class="burgerlinks burgeractive">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
             </ul>
+
+            <div class="burger toggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
-        <section id="indexpicture">
-            Picture
+        <section class="indexpicture">
+            <img class="bandimage" src="img/bandimg.jpg" alt="">
         </section>
-        <nav id="indexnav">
-            <ul id="indexul">
+        <nav class="indexnav">
+            <ul class="indexlinks">
                 <li><a href="">Link1</a></li>
                 <li><a href="">Link2</a></li>
                 <li><a href="">Link3</a></li>
                 <li><a href="">Link4</a></li>    
             </ul>
         </nav>
-    </div>  
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
