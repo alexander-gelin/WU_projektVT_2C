@@ -23,12 +23,10 @@
 
 .indexheader {
     grid-area: he;
-    border: black solid 1px;
 }
 
 .burgernav {
     grid-area: nb;
-    border: black solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,12 +35,12 @@
 .burgerlinks {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: absolute;
     right: 0px;
     height: 100vh;
     top: -100vh;
-    background-color: pink;
+    background-color: rgb(233, 233, 233);
     align-items: center;
     width: 75%;
     transition: all 1s;
@@ -61,6 +59,16 @@
     font-family: sans-serif;
 }
 
+.burgerbuttons {
+    width: 50vw;
+    height: 10vh;
+    border: solid grey 1px;
+    background-color: rgb(104, 69, 150);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
 .burgeractive {
     transform: translateY(100vh);
 }
@@ -70,7 +78,7 @@
     height: 3px;
     margin: 5px;
     border-radius: 10%;
-    background-color: crimson;
+    background-color: black;
     transition: all 0.3s;
 }
 
@@ -88,19 +96,18 @@
 
 .indexpicture {
     grid-area: pi;
-    border: black solid 1px; 
-    background-color: grey; 
+    background: rgb(136, 134, 134)
 }
 
-.bandimage {
+.slideimages {
     width: 100%;
     max-height: 100%;
     object-fit: contain;
+    overflow: hidden;
 }
 
 .indexnav {
     grid-area: nv;
-    border: black solid 1px;
 }
 
 .indexlinks {
@@ -110,6 +117,16 @@
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+.indexbuttons {
+    width: 75vw;
+    height: 10vh;
+    border: solid black 1px;
+    background-color: rgb(111, 31, 216);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .indexlinks li {
