@@ -4,7 +4,8 @@
     padding: 0;
 }
 
-.gridwrapper {
+/* index.html css */
+#index .gridwrapper {
     display: grid;
     height: 100vh;
     width: 100vw;
@@ -21,8 +22,97 @@
     grid-template-rows: repeat(7, 1fr);
 }
 
-.indexheader {
+.indexpictures {
+    grid-area: pi;
+    background: rgb(87, 86, 86)
+}
+
+.slideimages {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.indexnav {
+    grid-area: nv;
+}
+
+.indexlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(floralwhite, lavender);
+}
+
+.indexbuttons {
+    width: 75vw;
+    height: 10vh;
+    border: solid black 1px;
+    background-color: rgb(111, 31, 216);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.indexlinks li {
+    list-style-type: none;
+}
+
+/* omoss.html css */
+#omoss .gridwrapper {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+        "he he he he nb"
+        "s1 s1 s1 s1 s1"
+        "s2 s2 s2 s2 s2"
+        "s2 s2 s2 s2 s2"
+        "s2 s2 s2 s2 s2"
+        "s2 s2 s2 s2 s2"
+        "s2 s2 s2 s2 s2"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.omoss-section1 {
+    grid-area: s1;
+    background: firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.omoss-section2 {
+    grid-area: s2;
+    height: 100%;
+    width: 100%;
+    background: bisque;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.omoss-footer {
+    height: 100px;
+    background: brown;
+}
+
+/*  Allmän css */
+.logo {
+    max-height: 100%;
+    margin: 2px;
+}
+
+.header {
     grid-area: he;
+    display: flex;
+    justify-content: left;
 }
 
 .burgernav {
@@ -92,44 +182,5 @@
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px,-6px);
-}
-
-.indexpicture {
-    grid-area: pi;
-    background: rgb(136, 134, 134)
-}
-
-.slideimages {
-    width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    overflow: hidden;
-}
-
-.indexnav {
-    grid-area: nv;
-}
-
-.indexlinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.indexbuttons {
-    width: 75vw;
-    height: 10vh;
-    border: solid black 1px;
-    background-color: rgb(111, 31, 216);
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.indexlinks li {
-    list-style-type: none;
 }
 
