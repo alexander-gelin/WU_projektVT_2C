@@ -51,11 +51,13 @@
 .indexbuttons {
     width: 75vw;
     height: 10vh;
-    border: solid black 1px;
+    border: solid grey 1px;
     background-color: rgb(111, 31, 216);
     color: white;
     cursor: pointer;
     display: inline-block;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
 }
 
 .indexlinks li {
@@ -83,28 +85,38 @@
 .omoss-section {
     grid-area: se;
     min-height: 100vh;
-    background: rgb(248, 233, 214);
-    text-align: center;
+    background: rgb(245, 245, 245);
     position: relative;
 }
 
-.omoss-title {
-    background: blueviolet;
+.omoss-content {
+    text-align: center;
+    margin: 5px 5px 5px 5px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 2.5rem;   
+    justify-content: center;
+}
+
+.omoss-content-text {
+    margin-top: 20px;
+}
+
+#omoss-image {
+    height: 200px;
+    margin-top: 20px;
 }
 
 .omoss-footer {
     height: 2.5rem;
     width: 100%;
-    background: lightblue;
+    background: lightsteelblue;
     position: absolute;
     bottom: 0;
+    text-align: center;
 }
 
-/* Instrument.html css */
+/* instrument.html css */
 #instrument .gridwrapper {
     display: grid;
     height: 100vh;
@@ -122,35 +134,147 @@
     grid-template-rows: repeat(7, 1fr);
 }
 
-.instrument-title {
-    background: blueviolet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.5rem;   
-}
-
 .instrument-section {
     grid-area: se;
     min-height: 100vh;
-    background: rgb(248, 233, 214);
+    background: rgb(245, 245, 245);
     position: relative;
+    overflow: scroll;
 }
 
 .instrument-content {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .instrument-images {
-    height: 100px;
+    height: 200px;
+}
+
+.instrument-h1 {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.instrument-text {
+    margin: 10px 5px 20px 5px;
+    text-align: center;
 }
 
 .instrument-footer {
     height: 2.5rem;
     width: 100%;
-    background: lightblue;
+    background: lightsteelblue;
+    position: absolute;
+    border-bottom: 0;
+    text-align: center;
+}
+
+/* gåmedoss.html css */
+#låtar .gridwrapper {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+        "he he he he nb"
+        "se se se se se"
+        "se se se se se"
+        "se se se se se"
+        "se se se se se"
+        "se se se se se"
+        "se se se se se"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.låtar-section {
+    grid-area: se;
+    min-height: 100vh;
+    background: rgb(245, 245, 245);
+    position: relative;
+}
+
+.låtar-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.låtar-h1 {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.låtar-footer {
+    height: 2.5rem;
+    width: 100%;
+    background: lightsteelblue;
+    position: absolute;
+    border-bottom: 0;
+    text-align: center;
+}
+
+/* kontaktinfo.html css */
+#kontaktinfo .gridwrapper {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+        "he he he he nb"
+        "se se se se se"
+        "se se se se se"
+        "se se se se se"
+        "se se se se se"
+        "se se se se se"
+        "se se se se se"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.kontaktinfo-section {
+    grid-area: se;
+    min-height: 100vh;
+    background: rgb(245, 245, 245);
+    position: relative;
+}
+
+.kontaktinfo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontaktinfo-text {
+    margin-left: 10px;
+}
+
+.kontaktinfo-images {
+    vertical-align: middle;
+}
+
+#kontaktinfo-list {
+    margin-top: 10px;
+}
+
+.kontaktinfo-listitem {
+    margin-top: 30px;
+}
+
+.kontaktinfo-footer {
+    height: 2.5rem;
+    width: 100%;
+    background: lightsteelblue;
     position: absolute;
     bottom: 0;
+    text-align: center;
 }
 
 /*  Allmän css */
@@ -195,15 +319,6 @@
     list-style-type: none;
 }
 
-.burgerlinks a {
-    color: darkblue;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
 .burgerbuttons {
     width: 50vw;
     height: 10vh;
@@ -212,6 +327,8 @@
     color: white;
     cursor: pointer;
     display: inline-block;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
 }
 
 .burgeractive {
@@ -239,3 +356,159 @@
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+.desktopnav {
+    display: none;
+}
+
+.title {
+    background: lightsteelblue; 
+    position: relative;
+}
+
+#titletext {
+    text-align: center;
+    display: block;
+    position: relative;
+    bottom: 16px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+
+#homeicon {
+    position: relative;
+    top: 12px;
+    left: 5px;
+    z-index: 99;
+}
+
+#footertext {
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;    
+}
+
+span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1024px) {
+    #index .gridwrapper {
+        grid-template-areas: 
+            "he he he he"
+            "pi pi pi pi"
+            "pi pi pi pi"
+            "nv nv nv nv"
+            "nv nv nv nv"
+            "nv nv nv nv"
+            "nv nv nv nv"
+        ;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(7,1fr);
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .indexlinks {
+        display: block;
+        text-align: center;
+        padding-top: 10vh;
+    }
+
+    #n1 {
+        width: 40vw;
+        margin: 30px;
+    }
+
+    #n2 {
+        width: 40vw;
+        margin: 30px;
+    }
+
+    #n3 {
+        width: 40vw;
+        margin: 30px;
+    }
+
+    #n4 {
+        width: 40vw;
+        margin: 30px;
+    }
+
+    #omoss #instrument #låtar #kontaktinfo .gridwrapper {
+        grid-template-areas: 
+            "he he he he"
+            "se se se se"
+            "se se se se"
+            "se se se se"
+            "se se se se"
+            "se se se se"
+            "se se se se"
+        ;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .omoss-content {
+        margin: 25px 400px 25px 400px;
+    }
+
+    #omoss-image {
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .instrument-content {
+        margin: 25px 400px 25px 400px;
+    }
+
+    .låtar-content {
+        margin: 25px 400px 25px 400px;
+    }
+
+    .låtar-footer {
+        bottom: 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #titletext {
+        font-size: 24px;
+    }
+
+    .desktopnav {
+        display: block;
+        width: 40%;
+        margin: 50px 0px 0px 50px;
+    }
+
+    .desktopnavlist {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .desktopbuttons {
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        font-family: Verdana, sans-serif;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+}

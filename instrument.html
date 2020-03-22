@@ -6,18 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instrument</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body id="instrument">
     <div class="gridwrapper">
         <header class="header">
             <img class="logo" src="img/logo.jpg" alt="Logo">
+            <nav class="desktopnav">
+                <ul class="desktopnavlist">
+                    <li><button class="desktopbuttons" onclick="window.location.href = 'omoss.html';">Om oss</button></li>
+                    <li><button class="desktopbuttons" onclick="window.location.href = 'instrument.html';">Instrument</button></li>
+                    <li><button class="desktopbuttons" onclick="window.location.href = 'låtar.html';">Låtar</button></li>
+                    <li><button class="desktopbuttons" onclick="window.location.href = 'kontaktinfo.html';">Kontaktinfo</button></li>
+                </ul>
+            </nav>
         </header>
         <nav class="burgernav">
             <ul class="burgerlinks">
                 <li><button class="burgerbuttons" onclick="window.location.href = 'omoss.html';">Om oss</button></li>
                 <li><button class="burgerbuttons" onclick="window.location.href = 'instrument.html';">Instrument</button></li>
-                <li><button class="burgerbuttons" onclick="window.location.href = '';">Gå med oss</button></li>
-                <li><button class="burgerbuttons" onclick="window.location.href = '';">Kontaktinfo</button></li>
+                <li><button class="burgerbuttons" onclick="window.location.href = 'låtar.html';">Låtar</button></li>
+                <li><button class="burgerbuttons" onclick="window.location.href = 'kontaktinfo.html';">Kontaktinfo</button></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -26,28 +35,32 @@
             </div>
         </nav>
         <section class="instrument-section">
-            <section class="instrument-title">
-                <h1>Instrument</h1>
+            <section class="title">
+                <a href="index.html"><img id="homeicon" src="img/homeicon.png" alt=""></a> <!-- "Icon made by Freepik from www.flaticon.com" -->
+                <span id="titletext">Instrument</span>
             </section>
             <section class="instrument-content">
-                <p>Gitarr:</p>
-                <img class="instrument-images" src="img/bandimg.jpg" alt="">
-                <p>Bas:</p>
-                <img class="instrument-images" src="img/bandimg.jpg" alt="">
-                <p>Trummor:</p>
-                <img class="instrument-images" src="img/bandimg.jpg" alt="">
-                <p>Keyboard:</p>
-                <img class="instrument-images" src="img/bandimg.jpg" alt="">
-                <p>Sång:</p>
-                <img class="instrument-images" src="img/bandimg.jpg" alt="">
+                <h1 class="instrument-h1">Gitarr</h1>
+                <p class="instrument-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ut cupiditate minus culpa esse officiis nemo velit sequi animi accusantium ab aperiam provident, dolores, dolorum explicabo neque accusamus itaque harum.</p>
+                <img class="instrument-images" src="img/instrument-guitar.jpg" alt="">
+                <h1 class="instrument-h1">Bas</h1>
+                <p class="instrument-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus recusandae amet maiores soluta accusantium nobis quidem fugit, dolorum nesciunt unde, harum adipisci autem! Sapiente voluptas ipsam consequuntur ipsa minus.</p>
+                <img class="instrument-images" src="img/instrument-bass.jpg" alt="">
+                <h1 class="instrument-h1">Trummor</h1>
+                <p class="instrument-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quibusdam assumenda molestiae labore mollitia, reprehenderit magni, tempora omnis earum sed quos fugiat, dolor iure. Perspiciatis nemo dicta quaerat voluptates fugit?</p>
+                <img class="instrument-images" src="img/instrument-drums.jpg" alt="">
+                <h1 class="instrument-h1">Keyboard</h1>
+                <p class="instrument-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus explicabo quisquam officia. Illum, deleniti dolore at, voluptate architecto asperiores non culpa beatae, possimus voluptatum veritatis labore autem optio quod.</p>
+                <img class="instrument-images" src="img/instrument-keyboard.jpg" alt="">
+                <h1 class="instrument-h1">Sång</h1>
+                <p class="instrument-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, animi tempore dolores, in aperiam tempora magnam error ab aliquam deserunt maiores ut, sapiente quas ipsam nulla! Id illo itaque iusto.</p>
+                <img class="instrument-images" src="img/instrument-microphone.jpg" alt="">
             </section>
             <footer class="instrument-footer">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p id="footertext">Klicka <a href="misc/planering.html">Här</a> för planeringen!</p>
             </footer>
         </section>
     </div>
-    
-
     <script src="js/script.js"></script>
 </body>
 </html>
