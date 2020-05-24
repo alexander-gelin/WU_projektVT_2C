@@ -279,7 +279,7 @@
 
 /*  Allmän css */
 .logo {
-    max-height: 100%;
+    max-height: 100px;  
     margin: 2px;
 }
 
@@ -291,7 +291,7 @@
 
 .burger {
     z-index: 100;
-}
+}   
 
 .burgernav {
     grid-area: nb;
@@ -429,7 +429,7 @@ span {
     #n1 {
         width: 40vw;
         margin: 30px;
-    }
+    }   
 
     #n2 {
         width: 40vw;
