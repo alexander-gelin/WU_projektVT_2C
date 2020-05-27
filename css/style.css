@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* index.html css */
 #index .gridwrapper {
     display: grid;
@@ -45,7 +49,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background: radial-gradient(floralwhite, lavender);
+    background: radial-gradient(floralwhite, lavender); 
 }
 
 .indexbuttons {
@@ -57,7 +61,8 @@
     cursor: pointer;
     display: inline-block;
     font-family: Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .indexlinks li {
@@ -207,7 +212,7 @@
 }
 
 .låtar-h1 {
-    margin-top: 20px;
+    margin-top: 50px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -287,6 +292,7 @@
     grid-area: he;
     display: flex;
     justify-content: left;
+    align-items: center;
 }
 
 .burger {
@@ -329,6 +335,7 @@
     display: inline-block;
     font-family: Verdana, sans-serif;
     font-size: 15px;
+    text-align: center;
 }
 
 .burgeractive {
@@ -421,29 +428,33 @@ span {
     }
 
     .indexlinks {
-        display: block;
         text-align: center;
-        padding-top: 10vh;
+        padding-top: 0vh;
     }
 
     #n1 {
         width: 40vw;
-        margin: 30px;
+        margin: 10px;
     }   
 
     #n2 {
         width: 40vw;
-        margin: 30px;
+        margin: 10px;
     }
 
     #n3 {
         width: 40vw;
-        margin: 30px;
+        margin: 10px;
     }
 
     #n4 {
         width: 40vw;
-        margin: 30px;
+        margin: 10px;
+    }
+
+    .logo {
+        max-height: 120px;  
+        margin: 2px;
     }
 
     #omoss #instrument #låtar #kontaktinfo .gridwrapper {
@@ -492,7 +503,7 @@ span {
     .desktopnav {
         display: block;
         width: 40%;
-        margin: 50px 0px 0px 50px;
+        margin: 0px 0px 0px 50px;
     }
 
     .desktopnavlist {
@@ -510,5 +521,10 @@ span {
         font-family: Verdana, sans-serif;
         font-size: 12px;
         margin-left: 5px;
+    }
+
+    .logo {
+        max-height: 120px;  
+        margin: 2px;
     }
 }
